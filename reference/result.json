@@ -1,0 +1,77 @@
+{
+  "model": {
+    "materials": {
+      "brick": {
+        "lam": 0.77,
+        "rho": 1700.0,
+        "c": 800.0
+      },
+      "insulation": {
+        "lam": 0.035,
+        "rho": 25.0,
+        "c": 1400.0
+      }
+    },
+    "R_si": 0.13,
+    "R_se": 0.04,
+    "area_m2": 54.0,
+    "C_air_J_K": 32562.0,
+    "heater_W": 1500.0,
+    "T_out_C": 0.0,
+    "target_C": 18.0,
+    "dx_m": 0.00125,
+    "dt_s": 1.0
+  },
+  "cases": {
+    "inside": {
+      "layers": [
+        [
+          "brick",
+          0.2
+        ],
+        [
+          "insulation",
+          0.1
+        ]
+      ],
+      "t18_s": 843.5598839389154
+    },
+    "middle": {
+      "layers": [
+        [
+          "brick",
+          0.1
+        ],
+        [
+          "insulation",
+          0.1
+        ],
+        [
+          "brick",
+          0.1
+        ]
+      ],
+      "t18_s": 70262.89251726239
+    },
+    "outside": {
+      "layers": [
+        [
+          "insulation",
+          0.1
+        ],
+        [
+          "brick",
+          0.2
+        ]
+      ],
+      "t18_s": 124255.9529484923
+    }
+  },
+  "furnished_t18_s": {
+    "inside": 3508.59879441753,
+    "middle": 73121.88893744437,
+    "outside": 127240.03241105846
+  },
+  "U_W_m2K": 0.30423959856177646,
+  "tolerance_relative": 1e-09
+}
