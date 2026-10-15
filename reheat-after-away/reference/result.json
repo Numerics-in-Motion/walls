@@ -1,0 +1,175 @@
+{
+  "recovery_min": {
+    "d12h": {
+      "inside": 15.597506743538942,
+      "middle": 1.9537031102699582,
+      "outside": 1.2564967467333654
+    },
+    "d28d": {
+      "inside": 16.47126693732494,
+      "middle": 1361.2771557199262,
+      "outside": 2292.3680673446383
+    }
+  },
+  "u": {
+    "d12h": {
+      "inside": 1.3938103458258795,
+      "middle": 2.423646075674252,
+      "outside": 2.5852245260595703
+    },
+    "d28d": {
+      "inside": 1.5234589861920476,
+      "middle": 0.16425027063488282,
+      "outside": 0.1556613414512659
+    }
+  },
+  "swap_h": 41.88328968622227,
+  "swap_band_h": [
+    21.602814189486143,
+    92.89231600800116
+  ],
+  "heater_P_min_W": 902.955280821404,
+  "sized_heater": {
+    "P_W": 657.1575328934401,
+    "d12h_furn0": {
+      "outside_min": 57.00457186239938,
+      "inside_min": 59.27758081788392,
+      "ratio": 1.0398741518657706,
+      "leader": "outside"
+    },
+    "d12h_furn180": {
+      "outside_min": 74.56891688733528,
+      "inside_min": 175.6144361055386,
+      "ratio": 2.3550621818856645,
+      "leader": "outside"
+    },
+    "d28d_furn0": {
+      "outside_min": 8161.566374301483,
+      "inside_min": 62.920876405480314,
+      "ratio": 129.71158128354713,
+      "leader": "inside"
+    },
+    "d28d_furn180": {
+      "outside_min": 8274.032250619759,
+      "inside_min": 196.99845147802182,
+      "ratio": 42.00049385435323,
+      "leader": "inside"
+    }
+  },
+  "heater_thresholds_12h": [
+    {
+      "P_W": 496.32748262516253,
+      "direction": "fails above"
+    },
+    {
+      "P_W": 902.955280821404,
+      "direction": "clears above"
+    }
+  ],
+  "recovery_furnished_min": {
+    "d12h": {
+      "inside": 58.77430083831689,
+      "middle": 11.322963782923134,
+      "outside": 7.733067660206019
+    },
+    "d28d": {
+      "inside": 66.32208781884749,
+      "middle": 1412.8244623280766,
+      "outside": 2338.9720759440115
+    }
+  },
+  "furnished_ratio": {
+    "d12h": 7.6003862142273135,
+    "d28d": 35.266864371530225
+  },
+  "pairs": {
+    "d12h": {
+      "outside_vs_inside": {
+        "leader": "outside",
+        "gap": 11.413487566990739,
+        "need": 7.755673578178711,
+        "clears": true
+      },
+      "middle_vs_outside": {
+        "leader": "outside",
+        "gap": 0.5548811529748778,
+        "need": 7.755673578178711,
+        "clears": false
+      },
+      "middle_vs_inside": {
+        "leader": "middle",
+        "gap": 6.9835603790300125,
+        "need": 7.270938227022755,
+        "clears": false
+      }
+    },
+    "d28d": {
+      "outside_vs_inside": {
+        "leader": "inside",
+        "gap": 138.17375488281272,
+        "need": 4.5703769585761425,
+        "clears": true
+      },
+      "middle_vs_outside": {
+        "leader": "middle",
+        "gap": 0.6839833517460995,
+        "need": 0.4927508119046484,
+        "clears": true
+      },
+      "middle_vs_inside": {
+        "leader": "inside",
+        "gap": 81.64556460044888,
+        "need": 4.5703769585761425,
+        "clears": true
+      }
+    }
+  },
+  "corners": {
+    "d12h": {
+      "shared_worst_ratio": 4.612149965808613,
+      "flips": {
+        "furniture_0kJK": "0/512",
+        "furniture_180kJK": "0/512"
+      }
+    },
+    "d28d": {
+      "shared_worst_ratio": 24.53592010069041,
+      "flips": {
+        "furniture_0kJK": "0/512",
+        "furniture_180kJK": "0/512"
+      }
+    }
+  },
+  "heater_basis": [
+    {
+      "claim": "1,000 W and 1,500 W are among the most common portable electric heater ratings (US utility guidance).",
+      "url": "https://otpco.com/newsroom/posts/otter-tail-power-company-offers-tips-for-buying-and-using-portable-electric-space-heaters",
+      "source": "Otter Tail Power Company newsroom, 2019-01-03",
+      "quote": "The most common are 1,000-watt and 1,500-watt units."
+    },
+    {
+      "claim": "A 1,500 W heater is the source's worked example; it draws about 12.5 A.",
+      "url": "https://www.army.mil/article/69664/electrical_space_heaters",
+      "source": "U.S. Army Combat Readiness/Safety Center (A. Brown), 2011-11-21",
+      "quote": "If one 1,500-watt heater uses approximately 12.5 amps"
+    }
+  ],
+  "claims": {
+    "pair_outside_inside_12h_clears": true,
+    "pair_outside_inside_28d_clears": true,
+    "reversal_claimed": true,
+    "middle_12h_within_uncertainty": true,
+    "order_28d_inside_middle_outside": true,
+    "shared_corner_flips_zero": true,
+    "sized_heater_12h_is_tie_no_reversal_claimed_under_it": true,
+    "heater_sweep_1500W_clears_12h": true,
+    "heater_sweep_28d_clears_everywhere": true,
+    "heater_sweep_reversal_holds_from_P_min_to_3kW": true
+  },
+  "source_sha256": {
+    "reproduce.py": "f5c70581c52f5f9e77bc87ed80ae2d3ce20b757c2294d6f286a5f90fba994dd1",
+    "solver/reheat.py": "743a255c91a31d9a45c4c184bcbf46bf48f7467f47539310b61844e4e3eace11",
+    "../reproduce.py": "b82b8904ad6a050b14a08a7bf05d048d6e7ec9075d9e925a7f8615469a4d07d8",
+    "../reference/result.json": "67c71341ab76c8ddb165517cf2f9e222f56418a908945b70d1dd59fef87fc192"
+  }
+}

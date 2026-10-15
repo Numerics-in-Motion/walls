@@ -43,3 +43,7 @@ Laplace-domain solution (layer transfer matrices, Talbot inversion), and compare
   that this dry-wall model does not assess. No comfort or energy-saving claim is made.
 * A split build (50 mm of insulation on each side of the brick) was also run; the tested 50 mm
   room-side layer made it effectively tie the inside build, so it is not one of the three.
+
+## More studies on this rig
+
+* [`reheat-after-away/`](reheat-after-away/) — the same three rooms after a night away and after a month away: which is warm first?
