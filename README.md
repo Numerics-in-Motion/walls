@@ -47,3 +47,5 @@ Laplace-domain solution (layer transfer matrices, Talbot inversion), and compare
 ## More studies on this rig
 
 * [`reheat-after-away/`](reheat-after-away/) — the same three rooms after a night away and after a month away: which is warm first?
+* [`winter-condensate/`](winter-condensate/) — the same three walls in DIN 4108-3:2001's winter vapour-diffusion
+  calculation: which collects the most condensate?
